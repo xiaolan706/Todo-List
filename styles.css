@@ -1,0 +1,142 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 4rem;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #4d4d4d;
+  background-color: #f5f5f5;
+}
+
+header {
+  margin-bottom: 1.5rem;
+}
+
+main {
+  width: 500px;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+  background-color: white;
+}
+
+.input-area {
+  padding: 1rem;
+  display: flex;
+  box-shadow: inset 0 -2px 1px rgba(0, 0, 0, 0.05);
+}
+
+/* circle icon style */
+.select-all-icon {
+  border-radius: 50%;
+  height: 30px;
+  width: 25px;
+  display: block;
+  border: 2px solid;
+  padding: 2px;
+}
+
+.text-input {
+  flex-grow: 1;
+  border: none;
+  padding: 4px;
+  font-size: 1.5rem;
+  margin: 0 10px;
+}
+
+.text-input::placeholder {
+  color: #e6e6e6;
+}
+
+.button {
+  background-color: white;
+  border: 1px solid #777;
+  padding: 8px 16px;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+.deleteIcon {
+  display: none;
+  cursor: pointer;
+}
+
+.editInput {
+  display: none;
+}
+
+.hideInput {
+  display: block;
+}
+
+.showInitialInput{
+  display: block;
+}
+/* .hideInitialInput {
+  display: none;
+} */
+.hidePencil{
+  display: none;
+}
+.hideDelete {
+  display: none;
+}
+.saveMark {
+  display: none;
+}
+
+
+.editPencil {
+  display: none;
+  cursor: pointer;
+}
+
+ul li {
+  display: flex;
+  padding: 1rem;
+  border-bottom: 1px solid #ededed;
+  align-items: center;
+}
+
+ul li input {
+  margin-right: 32px;
+}
+
+ul li span {
+  font-size: 1.5rem;
+  flex-grow: 1;
+}
+
+ul li:hover .deleteIcon {
+  display: block;
+}
+
+ul li:hover .editPencil {
+  display: block;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+.selected-action-square {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.clear-all {
+  justify-self: end;
+}
+
+span.checked {
+  text-decoration: line-through;
+}
